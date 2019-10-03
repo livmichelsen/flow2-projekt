@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+display: flex;
+}
+.navigation{
+  font-family: helvetica, arial, sans-serif;
+  display: flex;
+
+}
+.navigation a{
+  text-decoration: none;
+  color: #6E6E6E;
+  line-height: 100%;
+  margin-top: 50px;
+  padding-right: 50px;
+  border: none;
+}
+
+.erfaring {
+  padding-left: 50px;
+}
+
+.navigation nav a {
+  border: none;
+  font-weight: bold;
+  width: 300px;
+
+}
+
+.navigation nav a:hover{
+  color: #1C1C1C;
+  transition: 0.5s;
+}
+
+img{
+  width: 170px;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  font-family: helvetica,arial,sans-serif;
+  transition: 0.5s;
+}
+
+/*Dropdown button */
+.portfolio {
+  font-size: 16px;
+  order: none;
+  font-weight: bold;
+  border: none;
+  outline: none;
+
+  background-color: inherit;
+  font-family: inherit;
+
+  color: #6E6E6E;
+}
+ nav {
+   margin-top: 40px;
+ }
+.menu{
+  justify-content: space-around;
+}
+
+.portfolio:hover{
+  color:#1C1C1C;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: flex;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}

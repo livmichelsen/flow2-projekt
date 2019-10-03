@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+display: flex;
+}
+.navigation{
+  font-family: helvetica, arial, sans-serif;
+  display: flex;
+
+}
+.navigation a{
+  text-decoration: none;
+  color: #6E6E6E;
+  line-height: 100%;
+  margin-top: 50px;
+  padding-right: 50px;
+}
+
+.erfaring {
+  padding-left: 50px;
+}
+
+.navigation nav a {
+  font-weight: bold;
+  width: 300px;
+
+}
+
+.navigation nav a:hover{
+  color: #1C1C1C;
+  transition: 0.5s;
+}
+
+.logo, img{
+  width: 170px;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  font-family: helvetica,arial,sans-serif;
+  transition: 0.5s;
+}
+
+/*Dropdown button */
+.portfolio {
+  font-size: 16px;
+  order: none;
+  font-weight: bold;
+  border: none;
+  outline: none;
+
+  background-color: inherit;
+  font-family: inherit;
+
+  color: #6E6E6E;
+}
+ nav {
+   margin-top: 40px;
+ }
+.menu{
+  justify-content: space-around;
+}
+
+.portfolio:hover{
+  color:#1C1C1C;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: flex;
+  text-align: left;
+}
+
+/* Added a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+
+}
+/* Header 1*/
+h1 {
+  font-family: helvetica, arial, sans-serif;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  color: #6E6E6E;
+}
+/* Pictures for the site*/
+img
+{
+  justify-content: center;
+}
+/* cards */
+.image-links{
+  display: flex;
+  /*man kan bruge justify-content eller margin til at få mellemrum mellem billederne*/
+  justify-content: space-between;
+  padding: 10px;
+}
+.image-links img{
+  width: 320px;
+}
+.infobox{
+  position: relative;
+  display: flex;
+
+}
+.infotekst{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 100%;
+  background: rgba(00,00,00, 0.5);
+  color: #f9f9f9;
+  font-size: 1.2em;
+  /*Laver teksten i midten gennemsigtig*/
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.infobox:hover .infotekst {
+  /*Får teksten frem ved at holde musen over*/
+  visibility: visible;
+  opacity: 1;
+}
